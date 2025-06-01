@@ -1,0 +1,92 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s;
+}
+
+.container {
+  position: relative;
+  max-width: 400px;
+  margin: 80px auto;
+  background: rgba(40, 44, 52, 0.85);
+  border-radius: 16px;
+  padding: 32px;
+  color: #fff;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.2);
+}
+
+#clock {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#login-form, #todo-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #ff7eb9;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #ff65a3;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#todo-list li {
+  background: #23272f;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#weather {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
